@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+body{
+    background-color: #000;
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+a{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff4e4e;
+}
+
+#buttonLogin{
+    background-color: #ff4e4e;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#divFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: baseline;
+    padding: 20px;
+}
+
+#divFlex div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-image: url('./assets/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+#banner h1 {
+    text-align: start;
+    font-weight: 700;
+    font-size: 48px;
+    width: 350px;
+}
+
+#banner p {
+    font-size: 24px;
+    font-weight: 400;
+    width: 350px;
+}
+
+.sectionTitle{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.sectionFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.highlightsCard{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    border: 3px solid #fff;
+    width: 90%;
+    border-radius: 8px
+}
+
+.titleCard{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.descriptionCard{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.flexColumn p{
+    font-size: 24px;
+}
+
+#whatsappIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#whatsappIcon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+#whatsappIcon img:hover {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+    #divFlex {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    #divFlex div {
+        flex-direction: column;
+        gap: 0;
+    }
+    #banner {
+        height: 80vh;
+        justify-content:flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    #banner h1 {
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10%;
+
+    }
+    #banner p {
+        font-size: 18px;
+        width: 100%;
+        width: 250px;
+        justify-content: center;
+    }
+    .sectionFlex{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        align-items: center;
+    }
+}
+
