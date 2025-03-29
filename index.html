@@ -12,14 +12,14 @@
 <body>
     <header>
         <div id="divFlex">
+            <img src="./assets/menu.png" alt="Menu hamburguer"id="menuHamburguer"/>
             <img src="./assets/Logo.png" alt="Logo do site" />
             <div>
-                <h2>Destaques</h2>
-                <h2>Avaliações</h2>
-                <h2>Contato</h2>
+                <a href="#destaques"><h2>Destaques</h2></a>
+                <a href="#avaliacoes"><h2>Avaliações</h2></a>
+                <a href="#contato"><h2>Contato</h2></a>
                 <button id="buttonLogin">Login</button>
             </div>
-
         </div>
     </header>
     <main>
@@ -27,7 +27,7 @@
             <h1>Cestas personalizadas</h1>
             <p>Seu presente exclusivo para Passos e região</p>
         </section>
-        <section>
+        <section id="destaques">
             <p class="sectionTitle">Destaques</p>
             <div class="sectionFlex">
                 <div class="highlightsCard">
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="avaliacoes">
             <p class="sectionTitle">Avaliações</p>
             <div class="sectionFlex">
                 <div>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="contato">
             <p class="sectionTitle">Contato</p>
             <div class="sectionFlex">
                 <div class="flexColumn">
@@ -87,9 +87,5 @@
             </a>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Projeto Extensão. Todos os direitos reservados.</p>
-    </footer>
 </body>
-
 </html>
